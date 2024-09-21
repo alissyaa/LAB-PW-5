@@ -1,0 +1,40 @@
+/* selector{ /* struktur dasar buat css 
+    property: value;
+} */
+
+* {
+    background-color: black;
+}
+
+#tombol-login{
+    color:chartreuse;
+}
+
+.kotak {
+    background-color: bisque;
+}
+
+a[title="fasilkom-ti"]{
+    color:chartreuse;
+}
+
+div p {
+    color:beige;
+}
+
+.box-model{
+    background-color:brown;
+    width: 300px;
+    border: 15px;
+    padding: 50px;
+    margin: 20px;
+}
+
+body{
+    font-size: 16px;
+    background-color: lightblue;
+}
+
+@media screen {
+    
+}

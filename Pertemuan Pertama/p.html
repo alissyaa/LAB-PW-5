@@ -1,0 +1,108 @@
+# Create the content for the third meeting presentation in HTML format
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 3: Relational Database Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2E86C1;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pertemuan 3: Relational Database Model</h1>
+    <p><strong>Mata Kuliah:</strong> Basis Data</p>
+    <p><strong>Program Studi:</strong> S1 Ilmu Komputer</p>
+    <p><strong>Universitas Sumatera Utara</strong></p>
+
+    <div class="section">
+        <h2>Tujuan Pembelajaran</h2>
+        <p>Setelah pertemuan ini, mahasiswa diharapkan mampu:</p>
+        <ul>
+            <li>Memahami konsep Relational Database Model</li>
+            <li>Memahami cara kerja tabel, kunci utama (primary key), dan kunci asing (foreign key)</li>
+            <li>Mampu mendesain tabel relational</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Relational Database Model</h2>
+        <p>Relational Database Model adalah model yang menyimpan data dalam bentuk tabel dua dimensi (relation).</p>
+        <ul>
+            <li>Setiap tabel terdiri dari kolom (atribut) dan baris (rekaman)</li>
+            <li>Setiap tabel harus memiliki kunci utama untuk mengidentifikasi rekaman secara unik</li>
+            <li>Tabel dapat dihubungkan satu sama lain melalui kunci asing (foreign key)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Kunci Utama (Primary Key)</h2>
+        <p>Kunci utama adalah kolom atau kombinasi kolom yang secara unik mengidentifikasi setiap baris dalam tabel.</p>
+        <ul>
+            <li>Setiap tabel hanya boleh memiliki satu kunci utama</li>
+            <li>Kunci utama tidak boleh berisi nilai null</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Kunci Asing (Foreign Key)</h2>
+        <p>Kunci asing adalah kolom dalam suatu tabel yang merujuk ke kunci utama di tabel lain.</p>
+        <ul>
+            <li>Kunci asing digunakan untuk menciptakan hubungan antar tabel</li>
+            <li>Membantu menjaga integritas referensial data</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Tabel dalam Relational Model</h2>
+        <p>Setiap tabel dalam relational database memiliki ciri-ciri:</p>
+        <ul>
+            <li>Nama tabel harus unik</li>
+            <li>Setiap kolom memiliki tipe data tertentu</li>
+            <li>Tidak ada baris yang boleh duplikat</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Diskusi Kelas</h2>
+        <p>Pertanyaan Diskusi:</p>
+        <ul>
+            <li>Apa perbedaan utama antara kunci utama dan kunci asing?</li>
+            <li>Mengapa integritas referensial penting dalam desain basis data relational?</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Penutup</h2>
+        <p>Kesimpulan:</p>
+        <ul>
+            <li>Relational Database Model menggunakan tabel untuk menyimpan data.</li>
+            <li>Kunci utama dan kunci asing berperan penting dalam menjaga integritas data.</li>
+            <li>Hubungan antar tabel memungkinkan data diakses dengan efisien.</li>
+        </ul>
+    </div>
+</body>
+</html>
+"""
+
+# Save the HTML file
+html_file = "/mnt/data/Pertemuan_3_Relational_Database_Model.html"
+with open(html_file, "w") as file:
+    file.write(html_content)
+
+html_file
